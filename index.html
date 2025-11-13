@@ -1,86 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rohith Reddy Karra - Portfolio and Blog">
-    <meta name="author" content="Rohith Reddy Karra">
-    <title>Rohith Reddy Karra | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>Rohith Reddy Karra</h1>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Rohith Reddy Karra — DevOps & SRE enthusiast. Portfolio and blog." />
+        <title>Rohith Karra — DevOps & SRE</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="nav-wrap">
+            <div class="container nav">
+                <div class="brand">
+                    <a href="#home">Rohith Karra</a>
+                    <span class="role">DevOps · SRE · Automation</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Welcome to My Portfolio</h2>
-                <p>Passionate developer and tech enthusiast sharing insights and projects</p>
-                <a href="#about" class="cta-button">Learn More</a>
+        <main>
+            <section id="home" class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-card">
+                        <h1>Hi, I'm Rohith 👋</h1>
+                        <p class="lead">DevOps & SRE enthusiast — I build resilient systems, automate toil away, and love observability.</p>
+                        <div class="cta-row">
+                            <a class="btn primary" href="#projects">See Projects</a>
+                            <a class="btn ghost" href="https://www.linkedin.com/in/rohith-reddy-karra-544450173/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="hero-aside">
+                        <div class="kpi">
+                            <div class="k">99.99%</div>
+                            <div class="label">Uptime Obsessed</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="k">&gt;100</div>
+                            <div class="label">Automations</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="k">K8s · Terraform</div>
+                            <div class="label">Fav Tools</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about section">
+                <div class="container">
+                    <h2 class="section-title">About</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I’m a Site Reliability / DevOps enthusiast focused on building scalable, observable platforms. I enjoy
+                            infrastructure-as-code, CI/CD pipelines, container orchestration, and removing manual work through automation.</p>
+
+                            <p>My approach is pragmatic: measure, automate, and improve. I document systems, write runbooks, and mentor teams on
+                            reliability best practices.</p>
+
+                            <p>For a detailed professional summary, view my LinkedIn profile (linked below). If you'd like a tailored resume or
+                            case studies, tell me what you'd like to see and I’ll add them.</p>
+                        </div>
+                        <div class="about-links">
+                            <a class="card" href="https://www.linkedin.com/in/rohith-reddy-karra-544450173/" target="_blank" rel="noopener noreferrer">
+                                <strong>LinkedIn</strong>
+                                <span>View resume & experience</span>
+                            </a>
+                            <a class="card" href="#contact">
+                                <strong>Let's Collaborate</strong>
+                                <span>Open to SRE/DevOps roles & freelance</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills">
+                <div class="container">
+                    <h2 class="section-title">Skills & Tools</h2>
+                    <div class="chips">
+                        <span class="chip">Kubernetes</span>
+                        <span class="chip">Terraform</span>
+                        <span class="chip">Prometheus</span>
+                        <span class="chip">Grafana</span>
+                        <span class="chip">CI/CD (GitHub Actions)</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Linux</span>
+                        <span class="chip">Python / Bash</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="project-grid">
+                        <article class="project">
+                            <h3>Cluster Autoscaler & Cost Watcher</h3>
+                            <p>Automated scaling and cost controls for Kubernetes clusters using metrics-driven policies and alerts.</p>
+                        </article>
+                        <article class="project">
+                            <h3>Infra as Code Boilerplate</h3>
+                            <p>Reusable Terraform modules for bootstrapping secure VPCs, CI pipelines and monitoring stack.</p>
+                        </article>
+                        <article class="project">
+                            <h3>Observability Playbook</h3>
+                            <p>Prometheus + Grafana dashboards, SLOs and runbooks to reduce MTTR and improve on-call triage.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <p>Feel free to reach out through LinkedIn or explore my projects. I'm always interested in connecting with
+                    fellow engineers and solving reliability challenges.</p>
+                    <div class="cta-row center">
+                        <a class="btn primary" href="https://www.linkedin.com/in/rohith-reddy-karra-544450173/" target="_blank" rel="noopener noreferrer">Message on LinkedIn</a>
+                        <a class="btn ghost" href="mailto:rohith@example.com">Email (replace with yours)</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>© 2025 Rohith Reddy Karra</div>
+                <div class="foot-links">
+                    <a href="https://github.com/RohitKarra" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/rohith-reddy-karra-544450173/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I'm a dedicated professional with a passion for building innovative solutions and sharing knowledge. 
-                With a strong background in technology and continuous learning mindset, I'm committed to excellence 
-                in every project I undertake.
-            </p>
-            <p>
-                For a complete overview of my professional experience and accomplishments, visit my LinkedIn profile:
-            </p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/rohith-reddy-karra-544450173/" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
-                    LinkedIn Profile
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>Blog</h2>
-            <p class="coming-soon">Coming soon... Check back for insights, tutorials, and project updates!</p>
-            <div class="blog-posts">
-                <!-- Blog posts will be added here -->
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>
-                Feel free to reach out through LinkedIn or explore more of my work. I'm always interested in 
-                connecting with fellow developers and enthusiasts.
-            </p>
-            <a href="https://www.linkedin.com/in/rohith-reddy-karra-544450173/" class="cta-button" target="_blank" rel="noopener noreferrer">
-                Connect on LinkedIn
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Rohith Reddy Karra. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
